@@ -23,5 +23,8 @@ class School
     roster.sort_by do |grade, name|
       name
     end
+    h = Hash.new {|hash, key| hash[key] = []}
+    roster.each {|e| h[e[0]] << e[1]}
+    p h 
   end
 end
