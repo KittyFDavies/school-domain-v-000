@@ -25,6 +25,6 @@ class School
     end
     h = Hash.new {|hash, key| hash[key] = []}
     roster.each {|e| h[e[0]] << e[1]}
-    p h 
+    p h
   end
 end
