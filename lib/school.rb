@@ -26,5 +26,6 @@ class School
       new_hash[grade] = []
       new_hash[grade] << name_array
     end
+    new_hash
   end
 end
