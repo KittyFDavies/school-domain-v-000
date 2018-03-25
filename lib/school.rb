@@ -23,8 +23,7 @@ class School
     new_hash = {}
     roster.each do |grade, names|
       name_array = names.values_at
-      new_hash[grade] = []
-      new_hash[grade] << name_array
+      new_hash[grade][name_array]
     end
     new_hash
   end
