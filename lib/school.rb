@@ -20,8 +20,11 @@ class School
   end
 
   def sort
-    roster.sort_by do |grade, name|
-      name
+    new_hash = {}
+    roster.each do |grade, names|
+      name_array = names.values
+      new_hash[grade] = []
+      new_hash[grade] << name_array
     end
     
   end
